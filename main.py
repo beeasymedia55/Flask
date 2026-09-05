@@ -45,7 +45,7 @@ def init_db():
 init_db()
 
 # --- FLASK APP ---
-app = Flask(__name__)
+main = Flask(__name__)
 CORS(app)
 
 class ScooterEngine:
@@ -240,4 +240,4 @@ def logs():
 
 if __name__ == '__main__':
     # Run in debug mode for local testing
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    main.run(host='0.0.0.0', port=5000, debug=True)
